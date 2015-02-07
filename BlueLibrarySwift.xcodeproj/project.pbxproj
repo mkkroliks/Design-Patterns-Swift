@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D5E2831A86643400EA9557 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5E2821A86643400EA9557 /* Album.swift */; };
+		02D5E2851A86692000EA9557 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5E2841A86692000EA9557 /* AlbumView.swift */; };
 		101DD6CB1A052EDE00161F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101DD6CA1A052EDE00161F0D /* AppDelegate.swift */; };
 		101DD6CD1A052EDE00161F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101DD6CC1A052EDE00161F0D /* ViewController.swift */; };
 		101DD6D01A052EDE00161F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101DD6CE1A052EDE00161F0D /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02D5E2821A86643400EA9557 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		02D5E2841A86692000EA9557 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		101DD6C51A052EDE00161F0D /* BlueLibrarySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueLibrarySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101DD6C91A052EDE00161F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101DD6CA1A052EDE00161F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				101DD6EA1A052EE400161F0D /* API */,
 				101DD6CA1A052EDE00161F0D /* AppDelegate.swift */,
 				101DD6CC1A052EDE00161F0D /* ViewController.swift */,
+				02D5E2821A86643400EA9557 /* Album.swift */,
+				02D5E2841A86692000EA9557 /* AlbumView.swift */,
 				101DD6CE1A052EDE00161F0D /* Main.storyboard */,
 				101DD6D11A052EDE00161F0D /* Images.xcassets */,
 				101DD6D31A052EDE00161F0D /* LaunchScreen.xib */,
@@ -226,6 +232,8 @@
 				101DD6CD1A052EDE00161F0D /* ViewController.swift in Sources */,
 				101DD6CB1A052EDE00161F0D /* AppDelegate.swift in Sources */,
 				101DD6EC1A052F0E00161F0D /* HTTPClient.swift in Sources */,
+				02D5E2851A86692000EA9557 /* AlbumView.swift in Sources */,
+				02D5E2831A86643400EA9557 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +427,7 @@
 				101DD6E61A052EDE00161F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101DD6E71A052EDE00161F0D /* Build configuration list for PBXNativeTarget "BlueLibrarySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +436,7 @@
 				101DD6E91A052EDE00161F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

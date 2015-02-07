@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2038376F-D139-4CCA-A7A4-33A25A9C1B26</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BlueLibrarySwift</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CB3F00835A1F19277FADDFFBB63F254666979B2F</key>
+		<string>https://github.com/mkkroliks/Design-Patterns-Swift.git</string>
+		<key>D0E40346A4013C0EC93124A83632D7CAA1BCE895</key>
+		<string>heroku.com:serene-ridge-6436.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BlueLibrarySwift.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CB3F00835A1F19277FADDFFBB63F254666979B2F</key>
+		<string>../..</string>
+		<key>D0E40346A4013C0EC93124A83632D7CAA1BCE895</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mkkroliks/Design-Patterns-Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CB3F00835A1F19277FADDFFBB63F254666979B2F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0E40346A4013C0EC93124A83632D7CAA1BCE895</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CB3F00835A1F19277FADDFFBB63F254666979B2F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BlueLibrarySwift%20</string>
+		</dict>
+	</array>
+</dict>
+</plist>
