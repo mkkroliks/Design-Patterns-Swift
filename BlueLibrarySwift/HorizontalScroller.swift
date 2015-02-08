@@ -110,13 +110,13 @@ class HorizontalScroller: UIView {
     
     //It will never be called. Something doesn't work 
     func centerCurrentView() {
-//        var xFinal = scroller.contentOffset.x + CGFloat((VIEW_OFFSET/2) + VIEW_PADDING)
-//        let viewIndex = xFinal / CGFloat((VIEW_DIMENSIONS + (2 * VIEW_PADDING)))
-//        xFinal = viewIndex * CGFloat(VIEW_DIMENSIONS + (2*VIEW_PADDING))
-//        scroller.setContentOffset(CGPointMake(xFinal, 0), animated: true)
-//        if let delegate = self.delegate {
-//            delegate.horizontalScrollerClickedViewAtIndex(self, index: Int(viewIndex))
-//        }
+        var xFinal = scroller.contentOffset.x + CGFloat((VIEW_OFFSET/2) + VIEW_PADDING)
+        let viewIndex = xFinal / CGFloat((VIEW_DIMENSIONS + (2 * VIEW_PADDING)))
+        xFinal = viewIndex * CGFloat(VIEW_DIMENSIONS + (2*VIEW_PADDING))
+        scroller.setContentOffset(CGPointMake(xFinal, 0), animated: true)
+        if let delegate = self.delegate {
+            delegate.horizontalScrollerClickedViewAtIndex(self, index: Int(viewIndex))
+        }
     }
 }
 

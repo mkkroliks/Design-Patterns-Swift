@@ -34,7 +34,15 @@ class AlbumView: UIView {
         indicator.startAnimating()
         addSubview(indicator)
         
+        coverImage.addObserver(self, forKeyPath: "image", options: nil, context: nil)
         NSNotificationCenter.defaultCenter().postNotificationName("BLDownloadImageNotification", object: self, userInfo: ["imageView":coverImage, "coverUrl":albumCover])
+    }
+    
+    //when value of coverImage(which during initialization is nil) will change this fuction will be called
+    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+        if keyPath == "image" {
+            indicator.stopAnimating()
+        }
     }
     
     func highlightAlbum(#didHighlighView:Bool) {
@@ -43,5 +51,9 @@ class AlbumView: UIView {
         } else {
             backgroundColor = UIColor.blackColor()
         }
+    }
+    //MARK:Remember that when we work with observers we have to unregister them durinig deinitialization
+    deinit {
+        coverImage.removeObserver(self, forKeyPath: "image")
     }
 }

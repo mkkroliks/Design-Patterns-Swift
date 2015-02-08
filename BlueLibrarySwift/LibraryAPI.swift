@@ -44,11 +44,15 @@ class LibraryAPI: NSObject {
         }
     }
     
-    func deleteAlbum(album:Album, index:Int) {
+    func deleteAlbum(index:Int) {
         persistencyManager.deleteAlbumAtIndex(index)
         if isOnline {
             httpClient.postRequest("/api/deleteAlbum", body: "\(index)")
         }
+    }
+    
+    func saveAlbums() {
+        persistencyManager.saveAlbums()
     }
     
     func downloadImage(notification: NSNotification) {

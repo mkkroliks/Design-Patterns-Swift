@@ -13,7 +13,18 @@ class PersistencyManager: NSObject {
     private var albums = [Album]()
     
     override init() {
-        //Dummy list of albums
+        super.init()
+        if let data = NSData(contentsOfFile: NSHomeDirectory().stringByAppendingString("/Documents/albums.bin")) {
+            let unarchiveAlbums = NSKeyedUnarchiver.unarchiveObjectWithData(data) as [Album]?
+            if let unwrappedAlbums = unarchiveAlbums {
+                albums = unwrappedAlbums
+            }
+        } else {
+            createPlaceholderAlbum()
+        }
+    }
+    
+    func createPlaceholderAlbum() {
         let album1 = Album(title: "Best of Bowie",
             artist: "David Bowie",
             genre: "Pop",
@@ -45,6 +56,7 @@ class PersistencyManager: NSObject {
             year: "2000")
         
         albums = [album1, album2, album3, album4, album5]
+        saveAlbums()
     }
     
     func getAlbums() -> [Album] {
@@ -67,6 +79,13 @@ class PersistencyManager: NSObject {
         let path = NSHomeDirectory().stringByAppendingString("/Documents/\(filename)")
         let data = UIImagePNGRepresentation(image)
         data.writeToFile(path, atomically: true)
+    }
+    
+    func saveAlbums() {
+        var filename = NSHomeDirectory().stringByAppendingString("/Documents/albums.bin")
+        //since Album class implements NSCoding protocol we are able to archive Album object and also array of Albums
+        let data = NSKeyedArchiver.archivedDataWithRootObject(albums)
+        data.writeToFile(filename, atomically: true)
     }
     
     func getImage(filename: String) -> UIImage? {
