@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		02D5E2831A86643400EA9557 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5E2821A86643400EA9557 /* Album.swift */; };
 		02D5E2851A86692000EA9557 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5E2841A86692000EA9557 /* AlbumView.swift */; };
+		02D5E28A1A86720B00EA9557 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5E2891A86720B00EA9557 /* LibraryAPI.swift */; };
+		02D5E28D1A867CDD00EA9557 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5E28C1A867CDD00EA9557 /* PersistencyManager.swift */; };
+		02D5E2921A86880800EA9557 /* AlbumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D5E2911A86880800EA9557 /* AlbumExtensions.swift */; };
+		02E875B51A86A296002A11E0 /* HorizontalScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E875B41A86A296002A11E0 /* HorizontalScroller.swift */; };
 		101DD6CB1A052EDE00161F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101DD6CA1A052EDE00161F0D /* AppDelegate.swift */; };
 		101DD6CD1A052EDE00161F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101DD6CC1A052EDE00161F0D /* ViewController.swift */; };
 		101DD6D01A052EDE00161F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101DD6CE1A052EDE00161F0D /* Main.storyboard */; };
@@ -31,6 +35,11 @@
 /* Begin PBXFileReference section */
 		02D5E2821A86643400EA9557 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		02D5E2841A86692000EA9557 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		02D5E2891A86720B00EA9557 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		02D5E28B1A8679F800EA9557 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		02D5E28C1A867CDD00EA9557 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
+		02D5E2911A86880800EA9557 /* AlbumExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumExtensions.swift; sourceTree = "<group>"; };
+		02E875B41A86A296002A11E0 /* HorizontalScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScroller.swift; sourceTree = "<group>"; };
 		101DD6C51A052EDE00161F0D /* BlueLibrarySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueLibrarySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		101DD6C91A052EDE00161F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101DD6CA1A052EDE00161F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +71,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02D5E2861A866F6F00EA9557 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02D5E2821A86643400EA9557 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		02D5E2871A866F7600EA9557 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E875B41A86A296002A11E0 /* HorizontalScroller.swift */,
+				02D5E2841A86692000EA9557 /* AlbumView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		02D5E2881A866F7900EA9557 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				101DD6CC1A052EDE00161F0D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		02D5E28E1A8687AF00EA9557 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02D5E2911A86880800EA9557 /* AlbumExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		101DD6BC1A052EDE00161F0D = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +127,15 @@
 			children = (
 				101DD6EA1A052EE400161F0D /* API */,
 				101DD6CA1A052EDE00161F0D /* AppDelegate.swift */,
-				101DD6CC1A052EDE00161F0D /* ViewController.swift */,
-				02D5E2821A86643400EA9557 /* Album.swift */,
-				02D5E2841A86692000EA9557 /* AlbumView.swift */,
+				02D5E2861A866F6F00EA9557 /* Model */,
+				02D5E2881A866F7900EA9557 /* Controller */,
+				02D5E2871A866F7600EA9557 /* View */,
+				02D5E28E1A8687AF00EA9557 /* Extensions */,
 				101DD6CE1A052EDE00161F0D /* Main.storyboard */,
 				101DD6D11A052EDE00161F0D /* Images.xcassets */,
 				101DD6D31A052EDE00161F0D /* LaunchScreen.xib */,
 				101DD6C81A052EDE00161F0D /* Supporting Files */,
+				02D5E28B1A8679F800EA9557 /* MyPlayground.playground */,
 			);
 			path = BlueLibrarySwift;
 			sourceTree = "<group>";
@@ -125,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				101DD6EB1A052F0E00161F0D /* HTTPClient.swift */,
+				02D5E28C1A867CDD00EA9557 /* PersistencyManager.swift */,
+				02D5E2891A86720B00EA9557 /* LibraryAPI.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -230,10 +276,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				101DD6CD1A052EDE00161F0D /* ViewController.swift in Sources */,
+				02D5E2921A86880800EA9557 /* AlbumExtensions.swift in Sources */,
 				101DD6CB1A052EDE00161F0D /* AppDelegate.swift in Sources */,
+				02D5E28A1A86720B00EA9557 /* LibraryAPI.swift in Sources */,
+				02E875B51A86A296002A11E0 /* HorizontalScroller.swift in Sources */,
 				101DD6EC1A052F0E00161F0D /* HTTPClient.swift in Sources */,
 				02D5E2851A86692000EA9557 /* AlbumView.swift in Sources */,
 				02D5E2831A86643400EA9557 /* Album.swift in Sources */,
+				02D5E28D1A867CDD00EA9557 /* PersistencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

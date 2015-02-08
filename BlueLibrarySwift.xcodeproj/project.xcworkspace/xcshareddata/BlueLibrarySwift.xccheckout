@@ -22,7 +22,7 @@
 		<key>CB3F00835A1F19277FADDFFBB63F254666979B2F</key>
 		<string>../..</string>
 		<key>D0E40346A4013C0EC93124A83632D7CAA1BCE895</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mkkroliks/Design-Patterns-Swift.git</string>
@@ -38,7 +38,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>D0E40346A4013C0EC93124A83632D7CAA1BCE895</string>
 			<key>IDESourceControlWCCName</key>
-			<string>..</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

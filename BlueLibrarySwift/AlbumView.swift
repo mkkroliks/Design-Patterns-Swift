@@ -25,6 +25,7 @@ class AlbumView: UIView {
         super.init(frame: frame)
         backgroundColor = UIColor.blackColor()
         //MARK: we place coverImage based on SuperView
+        //here we resize Image is its to big
         coverImage = UIImageView(frame: CGRectMake(5, 5, frame.size.width - 10, frame.size.height - 10))
         addSubview(coverImage)
         indicator = UIActivityIndicatorView()
@@ -32,6 +33,8 @@ class AlbumView: UIView {
         indicator.activityIndicatorViewStyle = .WhiteLarge
         indicator.startAnimating()
         addSubview(indicator)
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("BLDownloadImageNotification", object: self, userInfo: ["imageView":coverImage, "coverUrl":albumCover])
     }
     
     func highlightAlbum(#didHighlighView:Bool) {
